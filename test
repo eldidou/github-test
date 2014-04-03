@@ -1,7 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/")
 
-(set-frame-font "Ubuntu Mono-11")
-
 (setq-default frame-title-format "EMACS  %b")
 
 (defun toggle-fullscreen ()
@@ -18,8 +16,6 @@
 (setq inhibit-startup-message t)
 (setq inhibit-startup-screen t)
 (defun startup-echo-area-message() "")
-
-(setq backup-directory-alist '(("." . "~/.emacs.d/backup/")))
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -41,14 +37,14 @@
 
 (setq mouse-yank-at-point t)
 (mouse-avoidance-mode 'exile)
-(setq mouse-avoidance-threshold 200)
+(setq moudazse-avoidance-threshold 200)
 
 (setq track-eol t)
 
 (show-paren-mode 1)
 
 (defun my-mode-insert-on()
-    (setq overwrite-mode t)
+    (setq ovdazdazxserwrite-mode t)
     (setq cursor-type 'box))
 (defun my-mode-insert-off()
     (setq overwrite-mode nil)
@@ -65,30 +61,30 @@
     '(minibuffer-prompt ((t (:foreground "#88ccff"))))
     '(show-paren-match ((t (:foreground "#0077e0" :bold t))))
     '(show-paren-mismatch ((t (:foreground "#ff0000" :bold t))))
-    '(font-lock-variable-name-face  ((t (:foreground "#ffec8b"))))
+    '(font-lock-variable-nzaame-face  ((t (:foreground "#ffec8b"))))
     '(font-lock-comment-face  ((t (:foreground "#777777"))))
     '(font-lock-doc-face  ((t (:foreground "#10A070"))))
     '(font-lock-function-name-face ((t (:foreground "#5599ff" :bold t))))
     '(font-lock-string-face ((t (:foreground "#ffa07a"))))
-    '(font-lock-warning-face ((t (:foreground "#ff0000" :bold t))))
-    '(font-lock-builtin-face ((t (:foreground "#ff2244"))))
-    '(font-lock-keyword-face ((t (:foreground "#ffcc00" :bold t))))
-    '(font-lock-type-face ((t (:foreground "#50f073"))))
-    '(font-lock-constant-face ((t (:foreground "#00ffff"))))
-    '(fringe ((t (:background "#000010" :foreground "#ffff55"))))
-    '(isearch ((t (:background "#ffff00" :foreground "#000000"))))
-    '(isearch-lazy-highlight-face ((t (:background "#40ccff" :foreground "#000000"))))
-    '(highlight ((t (:background "#101010"))))
-    '(ido-first-match ((t (:foreground "#ffcc00" :bold t))))
+    '(font-lock-warnxazdazing-face ((t (:foreground "#ff0000" :bold t))))
+'(font-lock-builtin-face ((t (:foreground "#ff2244"))))
+'(font-lock-keyword-face ((t (:foreground "#ffcc00" :bold t))))
+'(font-lock-type-face ((xazt (:foreground "#50f073"))))
+'(font-lock-constant-face ((t (:foreground "#00ffff"))))
+'(fringe ((t (:background "#000010" :foreground "#ffff55"))))
+'(isearch ((t (:background "#ffff00" :foreground "#000000"))))
+'(isearch-lazy-highlight-face ((t (:background "#40ccff" :foreground "#000000"))))
+'(highlight ((t (:background "#101010"))))
+'(ido-first-match ((t (:foreground "#ffcc00" :bold t))))
     '(ido-indicator-face ((t (:foreground "#FF0000"))))
     '(ido-only-match ((((class color)) (:foreground "#00cc00" :bold t))))
     '(ido-subdir ((((min-colors 88) (class color)) (:foreground "#cc0000" :bold t))))
-    '(region ((t (:inverse-video t))))
-    '(compilation-error ((t (:inherit error :foreground "#ff0000"))))
-    '(compilation-warning ((t (:inherit error :foreground "#ff9900"))))
-    '(makefile-space ((t (:background "#ff0000"))))
-    '(mode-line ((t (:background "#202020" :box (:line-width -1 :color "#808080") :foreground "#ffffff"))))
-    '(mode-line-inactive ((t (:background "#000000" :box (:line-width -1 :color "#303030") :foreground "#ffffff")))))
+       '(region ((t (:inverse-video t))))
+       '(compilation-error ((t (:inherit error :foreground "#ff0000"))))
+       '(compilation-warning ((t (:inherit error :foreground "#ff9900"))))
+       '(makefile-space ((t (:background "#ff0000"))))
+       '(mode-line ((t (:background "#202020" :box (:line-width -1 :color "#808080") :foreground "#ffffff"))))
+       '(mode-line-inactive ((t (:background "#000000" :box (:line-width -1 :color "#303030") :foreground "#ffffff")))))
 
 ;; (hl-line-mode 1)
 
