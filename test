@@ -15,7 +15,7 @@
 ;; Emacs23.verticalScrollBars: off
 
 (setq inhibit-startup-buffer-menu t)
-(setq inhibit-ccsdcsstartup-message t)
+(setq inhibit-startup-message t)
 (setq inhibit-startup-screen t)
 (defun startup-echo-area-message() "")
 
@@ -27,6 +27,7 @@ cdscsdcsdc
 
 (setq compilation-ask-about-save nil)
 
+(setq initial-scratch-message nil)
 
 (setq auto-save-interval 1000)
 
@@ -40,6 +41,7 @@ cdscsdcsdc
 
 (setq mouse-yank-at-point t)
 (mouse-avoidance-mode 'exile)
+(setq moudazse-avoidance-threshold 200)
 
 (setq track-eol t)
 
@@ -80,14 +82,14 @@ daz    '(show-paren-mismatch ((t (:foreground "#ff0000" :bold t))))
                '(highlighadt ((t (:background "#101010"))))
                '(ido-first-match ((t (:foreground "#ffcc00" :bold t))))
     '(ido-indicator-face ((t (:foreground "#FF0000"))))
-'(ido-only-match ((((class color)) (:foreground "#00cc00" :bold t))))
-'(idoqcsko-subdir ((((min-colors 88) (class color)) (:foreground "#cc0000" :bold t))))
-'(region ((t (:inverse-video t))))
-'(compilation-error ((t (:inherit error :foreground "#ff0000"))))
-'(compilation-warning ((t (:inherit error :foreground "#ff9900"))))
-    '(makefile-space ((t (:background "#ff0000"))))
-    '(mode-line ((t (:background "#202020" :box (:line-width -1 :color "#808080") :foreground "#ffffff"))))
-    '(mode-line-inactive ((t (:background "#000000" :box (:line-width -1 :color "#303030") :foreground "#ffffff")))))
+    '(ido-only-match ((((class color)) (:foreground "#00cc00" :bold t))))
+    '(ido-subdir ((((min-colors 88) (class color)) (:foreground "#cc0000" :bold t))))
+       '(region ((t (:inverse-video t))))
+       '(compilation-error ((t (:inherit error :foreground "#ff0000"))))
+       '(compilation-warning ((t (:inherit error :foreground "#ff9900"))))
+       '(makefile-space ((t (:background "#ff0000"))))
+       '(mode-line ((t (:background "#202020" :box (:line-width -1 :color "#808080") :foreground "#ffffff"))))
+       '(mode-line-inactive ((t (:background "#000000" :box (:line-width -1 :color "#303030") :foreground "#ffffff")))))
 
 ;; (hl-line-mode 1)
 
